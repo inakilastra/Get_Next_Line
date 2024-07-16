@@ -155,3 +155,45 @@ char	*get_next_line(int fd)
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c 
 get_next_line_utils.c -o gnl && ./gnl text.txt
  */
+/*
+MAIN NORMAL
+int	main(int argc, char **argv)
+{
+	int		fd;
+	char	*test_str;
+
+	if (argc != 2)
+	{
+		write(1, "Wrong argument count: Must be exactly 2.\n", 41);
+		return (1);
+	}
+	test_str = NULL;
+	fd = open(argv[1], O_RDONLY);
+	if (fd == -1)
+	{
+		write (1, "Error: Could not open file\n", 27);
+		return (1);
+	}
+	while ((test_str = get_next_line(fd)))
+	{
+		printf("Result: %s", test_str);
+		free(test_str);
+	}
+	close (fd);
+	return (0);
+}
+*/
+/* 
+MAIN PARA ENTRADA POR TECLADO
+int	main(void)
+{
+	char	*line;
+
+	while ((line = get_next_line(0)) != NULL)
+	{
+		printf("%s", line);
+		free(line);
+	}
+	return (0);
+} 
+*/
