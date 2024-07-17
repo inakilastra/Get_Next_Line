@@ -152,8 +152,7 @@ char	*get_next_line(int fd)
 } */
 
 /*Compilar
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c 
-get_next_line_utils.c -o gnl && ./gnl text.txt
+gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c -o gnl && ./gnl text.txt
  */
 /*
 MAIN NORMAL
