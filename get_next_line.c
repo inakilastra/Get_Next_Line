@@ -154,8 +154,8 @@ char	*get_next_line(int fd)
 /*Compilar
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c -o gnl && ./gnl text.txt
  */
-/*
-MAIN NORMAL
+
+/* MAIN NORMAL
 int	main(int argc, char **argv)
 {
 	int		fd;
@@ -182,8 +182,8 @@ int	main(int argc, char **argv)
 	return (0);
 }
 */
-/* 
-MAIN PARA ENTRADA POR TECLADO
+
+/* MAIN PARA ENTRADA POR TECLADO
 int	main(void)
 {
 	char	*line;
